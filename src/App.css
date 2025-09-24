@@ -1,0 +1,19 @@
+body {
+  background-image: url('/img/ZjCajI.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar-bg {
+  background-image: url('/img/ZjCajI.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input::placeholder {
+  color: #154BB7; 
+  opacity: 1;     
+}
