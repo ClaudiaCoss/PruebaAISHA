@@ -14,7 +14,7 @@ function ReportPage(props) {
 
   return (
     <div>
-      <h1 style={{ textAlign: 'center', color: '#ffffffff', margin: '2rem' }}>{props.saludo}</h1>
+      <h1 style={{ textAlign: 'center', color: '#ffffff', margin: '2rem' }}>{props.saludo}</h1>
       <form className="row col-8 mx-auto g-3" onSubmit={handleSubmit}>
         <div className="col-md-6">
           <label htmlFor="inputEmail4" className="form-label"></label>
@@ -43,7 +43,7 @@ function ReportPage(props) {
           <input type="text" className="form-control" id="inputCity" placeholder="Adjuntar archivo:" />
         </div>
         <div className="col-12 d-flex justify-content-center">
-          <Button type="submit" variant="dark">
+          <Button type="submit" style={{ color: 'white', backgroundColor: '#0076C0', borderRadius: '5px', marginLeft: '10px', padding: '5px 15px' }}>
             Enviar
           </Button>
         </div>
@@ -56,13 +56,14 @@ function ReportPage(props) {
     alt="icono éxito"
     width="24"
     height="24"
-    style={{ marginRight: '8px', verticalAlign: 'middle' }}
+    style={{ marginRight: '8px', verticalAlign: 'middle', color:'#0076C0' }}
   />
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>Tu reporte fue registrado con éxito.
-Podrás dar seguimiento en la sección de
-Mis tickets.</Modal.Body>
+          <p>Podrás dar seguimiento en la sección de
+Mis tickets.</p>
+</Modal.Body>
         <Modal.Footer>
         </Modal.Footer>
       </Modal>
